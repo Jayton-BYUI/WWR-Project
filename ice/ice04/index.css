@@ -1,0 +1,32 @@
+body{
+    display: grid;
+    font-size: 2em;
+    text-align: center;
+    padding: 0%;
+}
+
+div.block-one{
+    grid-column: 1 / 2;
+    grid-row: 1;
+    margin-left: 400px;
+    margin-right: 1px;
+}
+div.block-two{
+    grid-row: 1;
+    grid-column: 2 / 3;
+    background-color: #b9b8b9;
+    margin-right: 400px;
+}
+
+div.cherry{
+    font-size: 1em;
+    padding-top: 150px;
+    color: #9C0E11;
+}
+div.tart{
+    position: absolute;
+    top: 3%;
+    left: 36%;
+    letter-spacing: 10px;
+}
+
