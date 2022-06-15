@@ -1,47 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Orelega+One&family=Playfair+Display:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
 
-/* Body */
-body{
-    background-color: white; 
-    font-family: 'Orelega One', cursive;
-    letter-spacing: 1px;
-    margin: 0;
-    padding: 0;
-}
-#background {
-    height: 725px;
-    background-color: #219EBC;
-    grid-column: 1/11;
-    grid-row: 4/9;
-}
-.home-grid{
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-}
-
-
-/* Headers */
-header{
-    background-color: #8ECAE6;
-    display: grid;
-    grid-template-columns: 150px auto;
-}
-.home-title{
-    color: #000;
-    font-family: 'Orelega One', cursive;
-    font-size: 3em;
-    letter-spacing: 2px;
-    margin-top: 10px;
-}
-h4{
-    color: #000;
-    font-family: 'Playfair Display', serif;
-}
-h2{
-    letter-spacing: 2px;
-    margin: 0;
-}
+/* Base for each page */
 
 /* Nav */
 nav{
@@ -58,6 +18,100 @@ nav a{
 nav a:hover{
     background-color: #219EBC;
     color: white;
+}
+#logo_link{
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+.logo{
+    width: 80px;
+}
+
+/* Sections */
+body{
+    background-color: white; 
+    font-family: 'Orelega One', cursive;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+}
+#background {
+    height: 725px;
+    background-color: #219EBC;
+    grid-column: 1/11;
+    grid-row: 4/9;
+}
+header{
+    background-color: #8ECAE6;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+main section{
+    text-align: center;
+}
+p{
+    font-family: 'Playfair Display', serif;
+}
+a{
+    font-family: 'Playfair Display', serif;
+}
+
+/* Footer */
+footer{
+    background-color: #8ECAE6;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer a{
+    color: #470202;
+    background: #8ECAE6;
+    text-decoration: none;
+}
+footer a:hover{
+    color: gray;
+}
+footer h3{
+    color: #000;
+    font-family: 'Playfair Display', serif;
+}
+footer h3 a:hover{
+    text-decoration: underline;
+}
+footer .social img{
+   padding-top: 15px;
+}
+
+
+
+/* Home Page */
+
+/* Body */
+.home-grid{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+
+/* Title */
+
+.home-title{
+    color: #000;
+    font-family: 'Orelega One', cursive;
+    font-size: 3em;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+h4{
+    color: #000;
+    font-family: 'Playfair Display', serif;
+}
+h2{
+    letter-spacing: 2px;
+    margin: 0;
 }
 
 /* Hero */
@@ -82,7 +136,7 @@ nav a:hover{
 
 /* msg */
 .msg{
-    background-color: #219EBC;
+    background-color: #FFD584;
     line-height: 1.5em;
     padding: 35px;
     grid-column: 6/10;
@@ -123,16 +177,7 @@ nav a:hover{
 }
 
 
-/* Sections */
-main section{
-    text-align: center;
-}
-p{
-    font-family: 'Playfair Display', serif;
-}
-a{
-    font-family: 'Playfair Display', serif;
-}
+/* Cards */
 .rivers-card, .camping-card, .rapids-card{
     margin: 200px 0;
 }
@@ -155,20 +200,14 @@ align-items: center; */
 
 /* Images */
 
-.icon, .logo{
+.icon{
     width: 80px;
+    padding-top: 10px;
 }
 img#hero-img{
     width: 100%;
 }
-#logo_link{
-    padding-top: 5px;
-    justify-self: center;
-    align-self: center;
-}
-.icon{
-    padding-top: 10px;
-}
+
 .card-img{
     border: 5px solid #470202;
     transition: transform .5s;
@@ -190,46 +229,82 @@ main section img{
     box-shadow: 5px 5px 10px #6f7364;
 }
 
-/* Footer */
-footer{
-    background-color: #8ECAE6;
-    padding: 25px 50px;
-    margin-top: 200px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-footer a{
+
+/* Page 2 */
+
+/* Headers */
+h1#rivers{
     color: #470202;
-    background: #8ECAE6;
-    text-decoration: none;
+    font-size: 2em;
 }
-footer a:hover{
-    color: gray;
+h3{
+    color: #FB8500;
+    font-size: 1.5em;
 }
-footer h3{
-    color: #000;
-    font-family: 'Playfair Display', serif;
+/* Sections */
+.rivers{
+    display: grid;
+    column-gap: 70px;
+    row-gap: 15px;
+    margin: 0 7%;
 }
-footer h3 a:hover{
-    text-decoration: underline;
+.rivers img{
+    width: 100%;
+    margin-top: 15px;
+    border: 5px solid #470202;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
 }
-footer .social img{
-   padding-top: 15px;
+.rivers img:hover{
+    opacity: .6;
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px #161715;
+}
+.rivers p{
+    background-color: #ffb80396;
+    padding: 10px;
 }
 
-
-.one{
+/* Idaho */
+#idaho-header{
+    grid-row: 1/2;
+    grid-column: 1/3;   
+}
+#idaho-left{
+    grid-row: 2/3;
     grid-column: 1/2;
-    grid-row: 2/3;
 }
-.two{
-    grid-column: 4/5;
+#idaho-right{
     grid-row: 2/3;
+    grid-column: 2/3;
 }
-.three{
-    grid-column: 7/8;
-    grid-row: 2/3;
+
+/* Utah */
+#utah-header{
+    grid-row: 3/4;
+    grid-column: 1/3;   
+}
+#utah-left{
+    grid-row: 4/5;
+    grid-column: 1/2;
+}
+#utah-right{
+    grid-row: 4/5;
+    grid-column: 2/3;
+}
+
+/* Arizona */
+#arizona-header{
+    grid-row: 5/6;
+    grid-column: 1/3;   
+}
+#arizona-left{
+    grid-row: 6/7;
+    grid-column: 1/2;
+}
+#arizona-right{
+    grid-row: 6/7;
+    grid-column: 2/3;
 }
 
 
@@ -251,6 +326,9 @@ footer .social img{
     #hero-msg {
         margin-top: 0;
     }
+    #hero-msg h1, #hero-msg h4{
+        color: #470202;
+    }
     #hero-msg h4 {
         display: none;
     }
@@ -261,6 +339,9 @@ footer .social img{
     .rivers-card, .camping-card, .rapids-card { 
         margin: 50px auto;
         width: 60%;
+    }
+    .rivers img{
+        width: 70%;
     }
     #background {
         display: none;
