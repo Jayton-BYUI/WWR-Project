@@ -4,21 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/about.css">
+    
     <title>Jayton's Portfolio</title>
 </head>
 <body>
     <header>
-        <a href="home.html"><img src="img/logo.png" alt="Logo"></a>
+        <a href="home.html"><img src="img/logo.png" alt="Logo" id="logo"></a>
         <nav>
             <a href="home.html">Home</a>
-            <a href="about-me.html">About Me</a>
+            <a href="about-me.html" id="current-page">About Me</a>
             <a href="qualifications.html">Qualifications</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
 
     <main>
-        <img src="img/about-me-pic.png" alt="Picture of Jayton" width="400">
+        <div class="container">
+            <img src="img/about-me-pic.png" alt="Picture of Jayton" class="image">
+            <div class="middle">
+            <a href="contact.html" class="text">Contact</a>
+            </div>
+        </div>
+        
         <section>
             <p>
                 About Me Through highschool I was never too sure about what I
@@ -48,10 +57,9 @@
                 will display a list of previous employers, certifications, and 
                 my resume. 
             </p>
-            
-        </section>
-        <section>
-            <p>
+
+            <img src="img/badges.png" alt="HTML and CSS Badges" id="badge">
+            <p id="skills">
                 Skills</br>
                 2 Years of HTML5</br>
                 2 Years of CSS</br>
@@ -61,27 +69,25 @@
                 Excellent Team Worker</br>
                 Hard Working and Dedicated
             </p>
-            <img src="img/badges.png" alt="HTML and CSS Badges">
         </section>
     </main>
 
     <footer>
         <h3>Portfolio Site &copy; 2022 - Jayton Crockett</h3>
-      
-        <a href="site-plan.html">Site-plan</a>
-        <a href="contact.html">Contact</a>
         
+        <a href="site-plan.html" class="footer_links">Site-plan</a>
+        <a href="contact.html" class="footer_links">Contact</a>
         <div class="social">
             <a href="https://facebook.com/" target="_blank">
-                <img src="img/facebook.png" alt="fb icon" width="40px">
+                <img src="img/facebook.png" alt="fb icon">
             </a>
 
             <a href="https://instagram.com" target="_blank">
-                <img src="img/instagram.png" alt="instagram icon" width="40px">
+                <img src="img/instagram.png" alt="instagram icon">
             </a>
 
             <a href="https://linkedin.com" target="_blank">
-                <img src="img/linkedin.png" alt="linkedin icon" width="40px">
+                <img src="img/linkedin.png" alt="linkedin icon">
             </a>
         </div>
     </footer>

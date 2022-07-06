@@ -36,6 +36,9 @@ nav a:hover{
     background-color: #6E3E9F;
     color: white;
 }
+#current-page{
+    border-bottom: 2px solid white;
+}
 
 /* Footer */
 footer{
