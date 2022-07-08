@@ -53,8 +53,9 @@ footer{
     display: grid;
     padding: 20px 0px;
 }
-h3{
+h3.footer{
     grid-column: 1;
+    margin: 15px 0px 15px auto;
 }
 a:nth-of-type(1){
     grid-column: 6;
