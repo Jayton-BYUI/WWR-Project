@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tai+Heritage+Pro&display=swap');
 
 /* body */
 body{
     background-color: #6f3e9f2f;
+    font-family: 'Oswald', sans-serif;
 }
-
+p{
+    font-family: 'TimesNewRoman', 'Tai Heritage Pro', serif;
+}
 /* Header */
 header{
     background-color: #191827;
